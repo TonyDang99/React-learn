@@ -1,30 +1,15 @@
 import './App.css';
-
-//this code is component
-function Feature(){
-  return(
-    <div className="feature">
-      <img src="" alt="" className="feature-image"/>
-      <h3 className="feature-title">Title</h3>
-      <p className="feature-desc">
-        fdsfsdfdfdfsdfsddsfdsfdsf
-      </p>
-    </div>
-  )
-}
-
+import YoutubeList from './components/youtube/YoutubeList';
 
 // Parents component
 function App() {
+
   return (
     <div>
-
-    {/* children component */}
-      <Feature></Feature>
-      <Feature></Feature>
-      <Feature></Feature>
+       <YoutubeList></YoutubeList>
     </div>
   );
 }
+
 
 export default App;
