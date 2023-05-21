@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
+//this code is component
+function Feature(){
+  return(
+    <div className="feature">
+      <img src="" alt="" className="feature-image"/>
+      <h3 className="feature-title">Title</h3>
+      <p className="feature-desc">
+        fdsfsdfdfdfsdfsddsfdsfdsf
+      </p>
+    </div>
+  )
+}
+
+
+// Parents component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    {/* children component */}
+      <Feature></Feature>
+      <Feature></Feature>
+      <Feature></Feature>
     </div>
   );
 }
