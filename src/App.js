@@ -4,9 +4,13 @@ import YoutubeList from './components/youtube/YoutubeList';
 // Parents component
 function App() {
 
+  const name = "Tungdt";
+
   return (
     <div>
-       <YoutubeList></YoutubeList>
+      <YoutubeList>
+      {name}
+      </YoutubeList>
     </div>
   );
 }
