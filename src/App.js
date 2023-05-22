@@ -1,4 +1,5 @@
 import './App.css';
+import Toggle from './components/state/Toggle';
 import YoutubeList from './components/youtube/YoutubeList';
 
 // Parents component
@@ -8,9 +9,10 @@ function App() {
 
   return (
     <div>
-      <YoutubeList>
+      {/* <YoutubeList>
       {name}
-      </YoutubeList>
+      </YoutubeList> */}
+      <Toggle></Toggle>
     </div>
   );
 }
